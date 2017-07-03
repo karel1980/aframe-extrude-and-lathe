@@ -1,7 +1,7 @@
 var comps = require('../index.js');
 
-require('aframe-core').registerComponent('lathe',   comps.latheComponent);
-require('aframe-core').registerComponent('extrude', comps.extrudeComponent);
+require('aframe').registerComponent('lathe',   comps.latheComponent);
+require('aframe').registerComponent('extrude', comps.extrudeComponent);
 
 setTimeout(function() {
     var els = document.querySelectorAll('a-entity');

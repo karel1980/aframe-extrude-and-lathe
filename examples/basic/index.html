@@ -5,9 +5,8 @@
   </head>
 
   <body>
-    <a-assets></a-assets>
-
     <a-scene>
+		<a-assets></a-assets>
 
         <a-entity
             light="type:directional; color:#DDD"
@@ -71,7 +70,13 @@
                 dur="2000"></a-animation>
         </a-entity>
 
+		<a-box position="0 0 0" size="1 1 1" height="1" depth="1" width="1" color="#ff00ff"/>
+		<a-box position="5 0 0" size="1 1 1" height="1" depth="1" width="1" color="#ff00ff"/>
+		<a-box position="0 0 0" size="1 1 1" height="1" depth="1" width="1" color="#ff00ff"/>
 
+		<a-camera>
+			<a-cursor animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/>
+		</a-camera>
 
     </a-scene>
   </body>
